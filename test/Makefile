@@ -4,7 +4,7 @@ all:	gtest
 gtest: calc.o gtest.o
 	g++ gtest.o	calc.o	-o gtest -lgtest -lpthread
 gtest.o:gtest.cpp 
-	g++	-c	gtest.cpp -lgtest -lpthread
+	g++	-c	gtest.cpp gtest.o -lgtest -lpthread
 calc.o:calc.cpp
 	g++	-c calc.cpp
 clean:

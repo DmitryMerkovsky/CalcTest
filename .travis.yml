@@ -2,6 +2,6 @@ language: cpp
 script: 
 - make
 - cd root
-- ./main < 5 <* <5
+- ./main < Travistest.txt
 - cd /test
 - ./gtest
